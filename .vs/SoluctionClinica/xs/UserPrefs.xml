@@ -1,9 +1,11 @@
 ﻿<Properties StartupConfiguration="{B62F516F-1D7C-4B00-B2AF-0B3E82616E2A}|">
   <MonoDevelop.Ide.ItemProperties.View PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="View/Pages/EstadoCadastro.aspx">
+  <MonoDevelop.Ide.Workbench ActiveDocument="View/Pages/EstadoCadastro.aspx.cs">
     <Files>
-      <File FileName="View/Pages/EstadoCadastro.aspx" Line="11" Column="47" />
-      <File FileName="View/menu.inc" Line="11" Column="22" />
+      <File FileName="View/Pages/EstadoCadastro.aspx" Line="27" Column="26" />
+      <File FileName="View/menu.inc" Line="33" Column="64" />
+      <File FileName="View/Pages/EstadoCadastro.aspx.designer.cs" Line="1" Column="1" />
+      <File FileName="View/Pages/EstadoCadastro.aspx.cs" Line="10" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,7 +13,9 @@
           <Node name="SoluctionClinica" expanded="True">
             <Node name="View" expanded="True">
               <Node name="Pages" expanded="True">
-                <Node name="EstadoCadastro.aspx" selected="True" />
+                <Node name="EstadoCadastro.aspx" expanded="True">
+                  <Node name="EstadoCadastro.aspx.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -20,7 +24,9 @@
       <Pad Id="ClassPad">
         <State name="__root__">
           <Node name="SoluctionClinica" expanded="True" selected="True">
-            <Node name="View" expanded="True" />
+            <Node name="View" expanded="True">
+              <Node name="References" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
