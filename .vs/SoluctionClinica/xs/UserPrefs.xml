@@ -1,13 +1,18 @@
 ﻿<Properties StartupConfiguration="{B62F516F-1D7C-4B00-B2AF-0B3E82616E2A}|">
   <MonoDevelop.Ide.ItemProperties.View PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="View/Pages/EstadoCadastro.aspx">
+    <Files>
+      <File FileName="View/Pages/EstadoCadastro.aspx" Line="11" Column="47" />
+      <File FileName="View/menu.inc" Line="11" Column="22" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SoluctionClinica" expanded="True">
             <Node name="View" expanded="True">
-              <Node name="Pages" expanded="True" />
-              <Node name="Default.aspx" selected="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="EstadoCadastro.aspx" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
