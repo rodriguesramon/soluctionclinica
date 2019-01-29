@@ -6,9 +6,7 @@
         <link type="text/css" rel="stylesheet" href="../Content/bootstrap.css" />
         <style>
             .posicaoButton{
-                
                 margin-top: 20px;
-
             }
         </style>
         
@@ -27,7 +25,7 @@
                        Sigla        
                        <asp:Textbox id="sigla" runat="server" CssClass="form-control" />         
                    </div>
-                  <asp:Button id="btnCadastrar" runat="server" Text="Cadastrar" CssClass="btn btn-primary posicaoButton"/>  
+                  <asp:Button ID="btnCadastrar" runat="server" Text="Cadastrar" CssClass="btn btn-primary posicaoButton" OnClick="btnCadastrarEstado" />  
                 </div>
             </form>   
           </div>

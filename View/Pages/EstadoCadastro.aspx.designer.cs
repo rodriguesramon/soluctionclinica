@@ -14,5 +14,9 @@ namespace View.Pages {
 	public partial class EstadoCadastro {
 		
 		protected System.Web.UI.HtmlControls.HtmlForm principal;
-	}
+
+        protected System.Web.UI.WebControls.TextBox nome;
+
+        protected System.Web.UI.WebControls.TextBox sigla;
+    }
 }
