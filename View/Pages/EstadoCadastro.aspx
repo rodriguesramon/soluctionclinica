@@ -19,14 +19,20 @@
                 <div class="form-group">
                    <div class="col-sm-3">
                        Nome Estado         
-                       <asp:Textbox id="nome" runat="server" CssClass="form-control" />         
+                       <asp:Textbox id="nome" autocomplete="off"  runat="server" CssClass="form-control" />         
                    </div>
                    <div class="col-sm-2">
                        Sigla        
                        <asp:Textbox id="sigla" runat="server" CssClass="form-control" />         
                    </div>
                   <asp:Button ID="btnCadastrar" runat="server" Text="Cadastrar" CssClass="btn btn-primary posicaoButton" OnClick="btnCadastrarEstado" />  
-                </div>
+                
+               </div>
+               <div class="form-group">
+               <h3> <asp:Label id="lblMensagem" runat="server"/> </h3>
+               </div>
+                    
+               
             </form>   
           </div>
         </div> 
