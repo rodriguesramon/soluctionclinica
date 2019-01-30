@@ -19,11 +19,11 @@
                 <div class="form-group">
                    <div class="col-sm-3">
                        Nome Estado         
-                       <asp:Textbox id="nome" autocomplete="off"  runat="server" CssClass="form-control" />         
+                       <asp:Textbox id="nome" autocomplete="off" runat="server" CssClass="form-control" />         
                    </div>
                    <div class="col-sm-2">
                        Sigla        
-                       <asp:Textbox id="sigla" runat="server" CssClass="form-control" />         
+                       <asp:Textbox id="sigla" autocomplete="off" runat="server" CssClass="form-control" />         
                    </div>
                   <asp:Button ID="btnCadastrar" runat="server" Text="Cadastrar" CssClass="btn btn-primary posicaoButton" OnClick="btnCadastrarEstado" />  
                 

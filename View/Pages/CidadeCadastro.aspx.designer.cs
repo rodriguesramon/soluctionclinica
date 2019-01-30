@@ -14,5 +14,11 @@ namespace View.Pages {
 	public partial class CidadeCadastro {
 		
 		protected System.Web.UI.HtmlControls.HtmlForm principal;
-	}
+
+        protected System.Web.UI.WebControls.TextBox descricao;
+
+        protected System.Web.UI.WebControls.DropDownList idEstado;
+
+        protected System.Web.UI.WebControls.Label lblMensagem;
+    }
 }

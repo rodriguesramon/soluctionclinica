@@ -3,7 +3,7 @@ using BLL.Model;
 using DAL.Persistence;
 using System.Web;
 using System.Web.UI;
-using System.Drawing;
+
 
 namespace View.Pages
 {
@@ -29,14 +29,24 @@ namespace View.Pages
                 nome.Text = "";
                 sigla.Text = "";
 
-                System.Threading.Thread.Sleep(5000);
-                Response.Redirect("/Pages/EstadoCadastro.aspx");
+                string msg = "Estado de " + estado.Nome + 
+                              " - " + estado.Sigla + 
+                              " foi cadastrado com sucesso";
+                lblMensagem.Text = msg;
+                lblMensagem.Attributes.CssStyle.Add("color", "green");
+               
+
+
+                // Response.Redirect("/Pages/EstadoCadastro.aspx");
+                //lblMensagem.Attributes.CssStyle.Add("color", "red");
+
 
             }
             catch (Exception erro)
             {
-                lblMensagem.Text = erro.Message;
+                lblMensagem.Text = erro.ToString();
             }
+
         }
     }
 }
