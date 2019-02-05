@@ -25,6 +25,8 @@ namespace DAL.Persistence
             }
         }
 
+
+
         public List<Estado> Listar(){
             try{
 
@@ -51,6 +53,35 @@ namespace DAL.Persistence
             }catch (Exception erro){
                 throw new Exception("Erro ao registrar dado " + erro.Message + erro.ToString());
             }finally{
+
+            }
+        }
+
+        public Estado PesquisarPorId(int id)
+        {
+            try
+            {
+
+                var sql = "SELECT * FROM estado WHERE id = @id" ;
+                command = new MySqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@id", id);
+                dataReader = command.ExecuteReader();
+
+                Estado estado = new Estado();
+
+                if (dataReader.Read()){
+                    estado.Id = Convert.ToInt32(dataReader["id"]);
+                    estado.Nome = dataReader["nome"].ToString();
+                    estado.Sigla = dataReader["sigla"].ToString();
+                }
+                return estado;
+            }
+            catch (Exception erro)
+            {
+                throw new Exception("Erro ao consultar dado " + erro.Message + erro.ToString());
+            }
+            finally
+            {
 
             }
         }

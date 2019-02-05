@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Web;
 using System.Web.UI;
+using BLL.Model;
 using DAL.Persistence;
 
 namespace View.Pages
@@ -8,20 +9,11 @@ namespace View.Pages
 
     public partial class EstadoLista : System.Web.UI.Page
     {
-        public void Page_Load(object sender, EventArgs e)
-        {
-            getListaEstado();
-        }
+        public void Page_Load(object sender, EventArgs e){
+            EstadoDal estadoDal = new EstadoDal();
+            gridListaEstado.DataSource = estadoDal.Listar();
+            gridListaEstado.DataBind();
 
-        public void getListaEstado(){
-            try{
-                EstadoDal estadoDal = new EstadoDal();
-                gridListaEstado.DataSource = estadoDal.Listar();
-                gridListaEstado.DataBind();
-
-            }catch(Exception erro){
-                lblMensagem.Text = erro.ToString();
-            }
         }
     }
 }

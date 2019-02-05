@@ -9,9 +9,12 @@
         
 	<form id="form1" runat="server">
         oi
-        <button onclick="test()" type="button">Test</button>
-        <button onclick="test()" type="button" id="btn">Test</button>
-            <button onclick="getMessage()" type="button" id="btnss">Testss</button>
+        <button onclick="test()" type="button">Testss</button>
+        
+            <asp:Textbox runat="server" id="TestCampo"/>
+            
+        <asp:Button Text="Test"  runat="server" OnClientClick='GetName();return false;'  id="btn" />
+       
         <div>
             <asp:ScriptManager ID="ScriptManager1" 
                 EnablePageMethods="true" 
@@ -21,10 +24,12 @@
     
     <script>
             
-        function getMessage() {
-    PageMethods.Message(, OnGetMessageFailure);
-}    
+        
         function test() {
+            valor = document.getElementById("TestCampo").value;
+            
+          alert(valor);  
+            return;
           var test = $.ajax({
                   type: "GET",
                   url: "PageTest.aspx/MetodoASerChamado",
@@ -36,9 +41,18 @@
             console.log(test);
         }
             
-     $("#btn").click(function () {
-        PageMethods.MeuMetodo("Cigano Morrison Mendez");
-    });
+   
+            function GetName() {  
+                PageMethods.Name(Success, Failure);  
+            }  
+  
+            function Success(result) {  
+                alert(result);  
+            }  
+  
+            function Failure(error) {  
+                alert(error);  
+            }  
     </script>
 </body>
 </html>

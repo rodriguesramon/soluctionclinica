@@ -15,6 +15,8 @@ namespace View.Pages {
 		
 		protected System.Web.UI.HtmlControls.HtmlForm form1;
 		
+		protected System.Web.UI.WebControls.Button btn;
+		
 		protected System.Web.UI.ScriptManager ScriptManager1;
 	}
 }

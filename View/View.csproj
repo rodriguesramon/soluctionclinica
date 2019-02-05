@@ -68,19 +68,26 @@
     </Compile>
     <Content Include="Pages\CidadeCadastro.aspx" />
     <Content Include="Pages\EspecialidadeCadastro.aspx" />
-    <Content Include="Pages\EstadoLista.aspx" />
-    <Compile Include="Pages\EstadoLista.aspx.cs">
-      <DependentUpon>EstadoLista.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\EstadoLista.aspx.designer.cs">
-      <DependentUpon>EstadoLista.aspx</DependentUpon>
-    </Compile>
     <Content Include="Pages\PageTest.aspx" />
     <Compile Include="Pages\PageTest.aspx.cs">
       <DependentUpon>PageTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\PageTest.aspx.designer.cs">
       <DependentUpon>PageTest.aspx</DependentUpon>
+    </Compile>
+    <Content Include="Pages\EstadoLista.aspx" />
+    <Compile Include="Pages\EstadoLista.aspx.designer.cs">
+      <DependentUpon>EstadoLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EstadoLista.aspx.cs">
+      <DependentUpon>EstadoLista.aspx</DependentUpon>
+    </Compile>
+    <Content Include="Pages\EstadoAlterar.aspx" />
+    <Compile Include="Pages\EstadoAlterar.aspx.cs">
+      <DependentUpon>EstadoAlterar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EstadoAlterar.aspx.designer.cs">
+      <DependentUpon>EstadoAlterar.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -14,14 +14,34 @@
     <body>
         <div class="container">
           <!-- #include file ="../menu.inc" -->
-          <div class="">
+          
             <form id="principal" runat="server" class="form-horizontal">
-               <asp:GridView id="gridListaEstado" runat="server" CssClass="table table-bordered table-hover"/>
-               <div class="form-group">
-                <h3> <asp:Label id="lblMensagem" runat="server"/> </h3>
-               </div>
+                
+                <div class="form-group">
+                   <div class="col-lg-12">
+                    <div class="input-group">
+                      <asp:Textbox runat="server" id="nome" CssClass="form-control"/>
+                      <span class="input-group-btn">
+                        <asp:Button runat="server" id="btnPesquisar" Text="Pesquisar" CssClass="btn btn-default"/>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                
+                <asp:GridView runat="server"  AutoGenerateColumns="false" id="gridListaEstado" CssClass="table table-bordered table-hover">
+                    
+                    <Columns>
+                        <asp:BoundField DataField="nome" HeaderText="ESTADO"/> 
+                        
+                        <asp:BoundField DataField="sigla" HeaderText="Abreviacao">
+                            <ItemStyle Width="10%"> </ItemStyle>
+                        </asp:BoundField>
+                    </Columns>
+                    
+                    
+                </asp:GridView>
             </form>   
-          </div>
+          
         </div> 
         <script src="../Scripts/jquery-1.9.1.js"></script>
         <script src="../Scripts/bootstrap.js"></script>

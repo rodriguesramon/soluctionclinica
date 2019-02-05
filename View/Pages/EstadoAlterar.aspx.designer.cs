@@ -11,10 +11,18 @@
 namespace View.Pages {
 	
 	
-	public partial class EstadoLista {
+	public partial class EstadoAlterar {
 		
-		protected System.Web.UI.HtmlControls.HtmlForm principal;
+		protected System.Web.UI.HtmlControls.HtmlForm form1;
 		
-		protected System.Web.UI.WebControls.GridView gridListaEstado;
+		protected System.Web.UI.WebControls.Label lblMensagem;
+		
+		protected System.Web.UI.WebControls.TextBox idEstado;
+		
+		protected System.Web.UI.WebControls.Button btnPesquisar;
+		
+		protected System.Web.UI.WebControls.Panel panelDetalhe;
+		
+		protected System.Web.UI.WebControls.TextBox nome;
 	}
 }

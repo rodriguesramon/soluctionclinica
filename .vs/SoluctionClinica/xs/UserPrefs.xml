@@ -1,22 +1,20 @@
 ﻿<Properties StartupConfiguration="{B62F516F-1D7C-4B00-B2AF-0B3E82616E2A}|">
   <MonoDevelop.Ide.ItemProperties.View PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DAL/Persistence/Conexao.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="View/Pages/EstadoLista.aspx">
     <Files>
-      <File FileName="View/Pages/CidadeCadastro.aspx.cs" Line="37" Column="65" />
-      <File FileName="DAL/Persistence/Conexao.cs" Line="52" Column="8" />
+      <File FileName="View/Pages/EstadoLista.aspx" Line="27" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SoluctionClinica" expanded="True">
             <Node name="DAL" expanded="True">
-              <Node name="Persistence" expanded="True">
-                <Node name="Conexao.cs" selected="True" />
-              </Node>
+              <Node name="Persistence" expanded="True" />
             </Node>
             <Node name="View" expanded="True">
               <Node name="Pages" expanded="True">
-                <Node name="CidadeCadastro.aspx" expanded="True" />
+                <Node name="EstadoAlterar.aspx" expanded="True" />
+                <Node name="EstadoLista.aspx" selected="True" />
               </Node>
             </Node>
           </Node>
