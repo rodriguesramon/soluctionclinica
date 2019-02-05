@@ -2,22 +2,24 @@
 using MySql.Data.MySqlClient;
 using BLL.Model;
 using System.Collections.Generic;
+
 namespace DAL.Persistence
 {
-    public class EspecialidadeDal : Conexao
+    public class MedicoDal : Conexao
     {
 
-
-        public void Salvar(Especialidade especialidade)
+        public void Salvar(Medico medico)
         {
             try
             {
                 
-                var sql = "INSERT INTO especialidade(descricao, dtCadastro)" +
-                          "VALUES(@descricao, CURRENT_TIMESTAMP())";
+                var sql = "INSERT INTO medico(nome, idEspecialidade, crm, dtCadastro)" +
+                          "VALUES(@nome, @idEspecialidade, @crm, CURRENT_TIMESTAMP())";
 
                 command = new MySqlCommand(sql, connection);
-                command.Parameters.AddWithValue("@descricao", especialidade.Descricao);
+                command.Parameters.AddWithValue("@nome", medico.Nome);
+                command.Parameters.AddWithValue("@idEspecialidade", medico.IdEspecialidade);
+                command.Parameters.AddWithValue("@crm", medico.Crm);
 
                 command.ExecuteNonQuery();
             }
@@ -31,31 +33,31 @@ namespace DAL.Persistence
             }
         }
 
-        public List<Especialidade> Listar()
+        public List<Medico> Listar()
         {
             try
             {
                 
-                var sql = "SELECT * FROM especialidade";
+                var sql = "SELECT * FROM medico";
                 command = new MySqlCommand(sql, connection);
                 dataReader = command.ExecuteReader();
 
-                List<Especialidade> listaespecialidade = new List<Especialidade>();
+                List<Medico> listaMedico = new List<Medico>();
 
                 while (dataReader.Read())
                 {
-                    Especialidade especialidade = new Especialidade();
+                    Medico medico = new Medico();
 
-                    especialidade.Id = Convert.ToInt32(dataReader["id"]);
-                    especialidade.Descricao = dataReader["descricao"].ToString();
+                    medico.Id = Convert.ToInt32(dataReader["id"]);
+                    medico.Nome = dataReader["nome"].ToString();
 
 
-                    listaespecialidade.Add(especialidade);
+                    listaMedico.Add(medico);
                 }
 
-                //listaespecialidade.Sort();
+                //listaMedico.Sort();
 
-                return listaespecialidade;
+                return listaMedico;
 
             }
             catch (Exception erro)
@@ -68,8 +70,7 @@ namespace DAL.Persistence
             }
         }
 
-
-        public EspecialidadeDal()
+        public MedicoDal()
         {
         }
     }

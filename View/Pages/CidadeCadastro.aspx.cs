@@ -12,6 +12,7 @@ namespace View.Pages
     {
         public void Page_Load(object sender, EventArgs e)
         {
+
             bindEstados();
         }
 
@@ -33,7 +34,7 @@ namespace View.Pages
                 lblMensagem.Text = msg;
                 lblMensagem.Attributes.CssStyle.Add("color", "green");
 
-                // Response.Redirect("/Pages/CidadeCadastro.aspx");
+                Response.Redirect("/Pages/CidadeCadastro.aspx");
                 //lblMensagem.Attributes.CssStyle.Add("color", "red");
 
             }
@@ -51,11 +52,8 @@ namespace View.Pages
             listaEstado = estadoDal.Listar();
 
             foreach(var estado in listaEstado){
-                idEstado.Items.Insert(0, new ListItem(estado.Id.ToString(), estado.Nome));
+                idEstado.Items.Insert(0, new ListItem(estado.Nome, estado.Id.ToString()));
             }
-
-
-
 
         }
     

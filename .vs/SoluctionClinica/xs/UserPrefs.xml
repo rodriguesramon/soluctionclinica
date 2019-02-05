@@ -1,29 +1,22 @@
 ﻿<Properties StartupConfiguration="{B62F516F-1D7C-4B00-B2AF-0B3E82616E2A}|">
   <MonoDevelop.Ide.ItemProperties.View PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DAL/Persistence/CidadeDal.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DAL/Persistence/Conexao.cs">
     <Files>
-      <File FileName="View/Pages/CidadeCadastro.aspx" Line="31" Column="25" />
-      <File FileName="View/Pages/CidadeCadastro.aspx.designer.cs" Line="19" Column="9" />
-      <File FileName="View/Pages/CidadeCadastro.aspx.cs" Line="18" Column="55" />
-      <File FileName="View/Pages/EstadoCadastro.aspx.cs" Line="2" Column="1" />
-      <File FileName="DAL/Persistence/CidadeDal.cs" Line="48" Column="1" />
+      <File FileName="View/Pages/CidadeCadastro.aspx.cs" Line="37" Column="65" />
+      <File FileName="DAL/Persistence/Conexao.cs" Line="52" Column="8" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SoluctionClinica" expanded="True">
-            <Node name="BLL" expanded="True">
-              <Node name="Model" expanded="True" />
-            </Node>
             <Node name="DAL" expanded="True">
               <Node name="Persistence" expanded="True">
-                <Node name="CidadeDal.cs" selected="True" />
+                <Node name="Conexao.cs" selected="True" />
               </Node>
             </Node>
             <Node name="View" expanded="True">
               <Node name="Pages" expanded="True">
                 <Node name="CidadeCadastro.aspx" expanded="True" />
-                <Node name="EstadoCadastro.aspx" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -31,17 +24,13 @@
       </Pad>
       <Pad Id="ClassPad">
         <State name="__root__">
-          <Node name="SoluctionClinica" expanded="True">
-            <Node name="View" expanded="True">
-              <Node name="References" expanded="True" selected="True" />
-            </Node>
-          </Node>
+          <Node name="SoluctionClinica" expanded="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

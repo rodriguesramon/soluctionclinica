@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -60,7 +59,29 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Pages\EstadoCadastro.aspx" />
+    <Content Include="Pages\MedicoCadastro.aspx" />
+    <Compile Include="Pages\MedicoCadastro.aspx.designer.cs">
+      <DependentUpon>MedicoCadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MedicoCadastro.aspx.cs">
+      <DependentUpon>MedicoCadastro.aspx</DependentUpon>
+    </Compile>
     <Content Include="Pages\CidadeCadastro.aspx" />
+    <Content Include="Pages\EspecialidadeCadastro.aspx" />
+    <Content Include="Pages\EstadoLista.aspx" />
+    <Compile Include="Pages\EstadoLista.aspx.cs">
+      <DependentUpon>EstadoLista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EstadoLista.aspx.designer.cs">
+      <DependentUpon>EstadoLista.aspx</DependentUpon>
+    </Compile>
+    <Content Include="Pages\PageTest.aspx" />
+    <Compile Include="Pages\PageTest.aspx.cs">
+      <DependentUpon>PageTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageTest.aspx.designer.cs">
+      <DependentUpon>PageTest.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -83,6 +104,12 @@
     </Compile>
     <Compile Include="Pages\CidadeCadastro.aspx.designer.cs">
       <DependentUpon>CidadeCadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EspecialidadeCadastro.aspx.cs">
+      <DependentUpon>EspecialidadeCadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EspecialidadeCadastro.aspx.designer.cs">
+      <DependentUpon>EspecialidadeCadastro.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

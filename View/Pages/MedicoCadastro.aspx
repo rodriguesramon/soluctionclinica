@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" Inherits="View.Pages.CidadeCadastro" %>
+﻿<%@ Page Language="C#" Inherits="View.Pages.MedicoCadastro" %>
 <!DOCTYPE html>
 <html>
     <head runat="server">
@@ -17,19 +17,23 @@
           <div class="jumbotron">
             <form id="principal" runat="server" class="form-horizontal">
                 <div class="form-group">
-                   <div class="col-sm-3">
-                       Nome Cidade         
-                       <asp:Textbox id="descricao" autocomplete="off" runat="server" CssClass="form-control" />         
+                   <div class="col-sm-4">
+                       Nome         
+                       <asp:Textbox id="nome" autocomplete="off" runat="server" CssClass="form-control" />         
                    </div>
                    <div class="col-sm-3">
-                       Estado
-                       <asp:DropDownList id="idEstado" runat="server" CssClass="form-control">
+                       Especialidade
+                       <asp:DropDownList id="IdEspecialidade" runat="server" CssClass="form-control">
                             
                        </asp:DropDownList>
                    </div>
-                       
                         
-                  <asp:Button ID="btnCadastrar" runat="server" Text="Cadastrar" CssClass="btn btn-primary posicaoButton" OnClick="btnCadastrarCidade"/>  
+                   <div class="col-sm-2">
+                       CRM
+                       <asp:Textbox id="crm" autocomplete="off" runat="server" CssClass="form-control" />         
+                   </div>    
+                        
+                  <asp:Button ID="btnCadastrar" runat="server" Text="Cadastrar" CssClass="btn btn-primary posicaoButton" OnClick="btnCadastrarMedico"/>  
                 
                </div>
                <div class="form-group">

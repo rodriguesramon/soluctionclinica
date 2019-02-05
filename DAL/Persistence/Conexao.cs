@@ -46,6 +46,13 @@ namespace DAL.Persistence
 
         public Conexao()
         {
+            AbrirConexao();
         }
+
+        ~Conexao(){
+            FecharConexao();
+        }
+
+
     }
 }
