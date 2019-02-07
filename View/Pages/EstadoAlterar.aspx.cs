@@ -13,6 +13,7 @@ namespace View.Pages
         }
         public void btnPesquisarEstado(object sender, EventArgs e)
         {
+            /*
             try{
                 int id_estado = Int32.Parse(idEstado.Text);
                 EstadoDal estadoDal = new EstadoDal();
@@ -29,6 +30,7 @@ namespace View.Pages
             }catch(Exception erro){
                 lblMensagem.Text = erro.ToString();
             }
+            */
         }
     }
 }

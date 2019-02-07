@@ -1,31 +1,11 @@
 ﻿<Properties StartupConfiguration="{B62F516F-1D7C-4B00-B2AF-0B3E82616E2A}|">
   <MonoDevelop.Ide.ItemProperties.View PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="View/Pages/EstadoLista.aspx">
+  <MonoDevelop.Ide.Workbench ActiveDocument="View/Pages/EstadoPesquisa.aspx.designer.cs">
     <Files>
-      <File FileName="View/Pages/EstadoLista.aspx" Line="27" Column="31" />
+      <File FileName="DAL/Persistence/EstadoDal.cs" Line="115" Column="64" />
+      <File FileName="View/Pages/EstadoPesquisa.aspx" Line="35" Column="67" />
+      <File FileName="View/Pages/EstadoPesquisa.aspx.designer.cs" Line="20" Column="51" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="SoluctionClinica" expanded="True">
-            <Node name="DAL" expanded="True">
-              <Node name="Persistence" expanded="True" />
-            </Node>
-            <Node name="View" expanded="True">
-              <Node name="Pages" expanded="True">
-                <Node name="EstadoAlterar.aspx" expanded="True" />
-                <Node name="EstadoLista.aspx" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="ClassPad">
-        <State name="__root__">
-          <Node name="SoluctionClinica" expanded="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

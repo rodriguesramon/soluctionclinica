@@ -89,6 +89,13 @@
     <Compile Include="Pages\EstadoAlterar.aspx.designer.cs">
       <DependentUpon>EstadoAlterar.aspx</DependentUpon>
     </Compile>
+    <Content Include="Pages\EstadoPesquisa.aspx" />
+    <Compile Include="Pages\EstadoPesquisa.aspx.cs">
+      <DependentUpon>EstadoPesquisa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EstadoPesquisa.aspx.designer.cs">
+      <DependentUpon>EstadoPesquisa.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
